@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script src="script.js"></script>
+	<title>LaRon</title>
+</head>
+<body class="d-flex flex-column min-vh-100 body">
+	<!-- 
+		------------------------------------------------------------------------------------------
+		
+		NAVBAR
+		
+		------------------------------------------------------------------------------------------
+	-->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+        
+		<div class="collapse navbar-collapse ml-3" id="navbarTogglerDemo02">
+			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+				<li class="nav-item active">
+					<a class="nav-link" href="index.html">Accueil</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="projetCat.html" role="button">Mes projets</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact</a>
+				</li>		
+            </ul>		
+		</div>
+	</nav>
+	<!-- 
+		------------------------------------------------------------------------------------------
+		
+		FIN NAVBAR
+		
+		------------------------------------------------------------------------------------------
+	-->
+	
+	<!-- 
+		------------------------------------------------------------------------------------------
+		
+		Formulaire
+		
+		------------------------------------------------------------------------------------------
+	-->
+	<h2 class="pt-3 pb-2" style="text-align: center;">Vous pouvez me contacter via ce formulaire</h2>
+	<div class="container border border-dark rounded mb-3 text-dark bg-light">
+		<form method="post" action="contactFormHandler.php">
+			<div class="p-1 card-body">
+				<!--nom/prenom-->
+				<div class="pt-2">
+					<label for="exampleFormControlInput1">Prenom</label>
+					<input name="firstName" type="text" class="form-control" placeholder="Prénom">
+				</div>
+				<div class="pt-2">
+					<label for="exampleFormControlInput1">Nom</label>
+					<input name="name" type="text" class="form-control" placeholder="Nom">
+				</div>
+				<!--mail-->
+				<div class="form-group">
+					<label for="exampleFormControlInput1">Adresse mail</label>
+					<input name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+				</div>
+				
+				<!--text area-->
+				<div class="form-group">
+					<label for="exampleFormControlTextarea1">Votre message</label>
+					<textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+				</div>
+				
+				
+				<center>
+					<input type="submit" class="btn btn-dark form-control w-50 zoom" value="Envoyer"></input>						
+				</center>
+			</div>
+		</form>
+	</div>
+	
+	
+	<!-- 
+		------------------------------------------------------------------------------------------
+		
+		Fin Formulaire
+		
+		------------------------------------------------------------------------------------------
+	-->
+	
+	<!-- 
+		------------------------------------------------------------------------------------------
+		
+		Footer
+		
+		------------------------------------------------------------------------------------------
+	-->
+
+
+    <footer class="text-center text-white pb-0 mt-auto">
+		<!-- Grid container -->
+		<div class="container p-4">
+			<!-- Section: Social media -->
+			<section class="mb-4">
+				<!--github-->  
+				<a class="btn btn-outline-light btn-floating m-1" href="https://github.com/stegotraus/" role="button" target="_blank"><i class="fa fa-github"></i></a>
+				<!--gitlab-->  
+				<a class="btn btn-outline-light btn-floating m-1" href="https://gitlab.com/stegotraus" role="button" target="_blank"><i class="fa fa-gitlab"></i></a>
+				<!--twitter-->
+				<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button" target="_blank"><i class="fa fa-twitter"></i></a>
+				
+			</section>
+			<!-- Section: Social media -->
+			
+			<!-- Section: Text -->
+			<section class="mb-4">
+				<p>
+					Trouvez ici mes liens github, gitlab et twitter &#128521
+				</p>
+			</section>
+			<!-- Section: Text -->
+		</div>
+		<!-- Grid container -->
+		
+		<div class="text-center p-3">
+			© Jean Caron - portfolio
+		</div>
+		<!-- Copyright -->
+	</footer>	
+	
+	<!-- 
+		------------------------------------------------------------------------------------------
+		
+		fin Footer
+		
+		------------------------------------------------------------------------------------------
+	-->
+
+</body>
+</html>
