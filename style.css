@@ -1,12 +1,11 @@
+html{
+    scroll-behavior:smooth;
+}
+
 .body{
     background-color: black;
     color: white;
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
-}
-
-header{
-    background-color: black;
-    height: 10rem;
 }
 
 .lignefooter{
@@ -41,17 +40,6 @@ footer{
 }
 
 
-.carousel-control-prev-icon, 
-.carousel-control-next-icon{
-    height: 100px;
-    width: 100%;
-    outline: black;
-    background-size: 100%, 100%;
-    border-radius: 50%;
-    filter: invert(100%);
-    background-image: none;
-}
-
 .zoom{
     transition: transform .2s;
     width: auto;
@@ -77,5 +65,10 @@ footer{
     margin-top: 15%;
     font-style: oblique;
 }
+
+#scrollspysecondepage{
+    background-color: rgb(41, 41, 41);
+}
+
 
 
