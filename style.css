@@ -8,6 +8,7 @@ html{
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
 }
 
+
 .lignefooter{
     margin-left: 15%;
     margin-right: 15%;
@@ -67,8 +68,5 @@ footer{
 }
 
 #scrollspysecondepage{
-    background-color: rgb(41, 41, 41);
+    background-color: rgb(17, 17, 17);
 }
-
-
-
