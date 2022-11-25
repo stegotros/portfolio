@@ -20,4 +20,9 @@ $('.carousel .carousel-item').each(function(){
     }
 });
 
+
+function darkMode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
   

@@ -17,7 +17,7 @@
 </head>
 <body class="body">
 
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-black">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -25,24 +25,26 @@
 		<div class="collapse navbar-collapse ml-3" id="navbarTogglerDemo02">
 			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 				<li class="nav-item active">
-					<a class="nav-link zoomnav" href="index.html">Accueil</a>
+					<a class="nav-link zoom" href="index.html">Accueil</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link zoomnav" href="projetCat.html" role="button">Mes projets</a>
+					<a class="nav-link zoom" href="projetCat.html" role="button">Mes projets</a>
 				</li>
                 <li class="nav-item">
-					<a class="nav-link zoomnav" href="#">Formation</a>
+					<a class="nav-link zoom" href="#">Formation</a>
 				</li>		
 				<li class="nav-item">
-					<a class="nav-link zoomnav" href="#">Compétences</a>
+					<a class="nav-link zoom" href="#">Compétences</a>
 				</li>		
 				<li class="nav-item">
-					<a class="nav-link zoomnav" href="contact.html">Contact</a>
+					<a class="nav-link zoom" href="contact.html">Contact</a>
 				</li>		
             </ul>
 
             <section>
-				<!--github-->  
+                <!--darkmode-->
+                <button type="button" class="btn btn-outline-secondary" onclick="darkMode()">Darkmode</button>
+                <!--github-->  
 				<a class="btn btn-outline-light btn-floating m-1 zoom" href="https://github.com/stegotraus/" role="button" target="_blank"><i class="fa fa-github"></i></a>
 				<!--gitlab-->  
 				<a class="btn btn-outline-light btn-floating m-1 zoom" href="https://gitlab.com/stegotraus" role="button" target="_blank"><i class="fa fa-gitlab"></i></a>
@@ -71,7 +73,7 @@
     
 
     <div data-bs-spy="scroll" class="scrollspy-example">
-        <div class="container mb-4 text-justify border border-light rounded" id="scrollspysecondepage">
+        <div class="container mb-4 text-justify" id="scrollspysecondepage">
             <p class="mt-4 fs-3" id="Apropos">À propos</p>
             <br>
                 <p class="fs-5">
@@ -105,7 +107,7 @@
                 </p>
         </div>
     </div>
-    <footer class="text-center text-white pb-0" style="margin-top: 10vh;">
+    <footer class="text-center pb-0" style="margin-top: 10vh;">
         <hr class="lignefooter">
 		<div class="text-center">
 			© Jean Caron - portfolio
