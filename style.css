@@ -3,9 +3,9 @@ html{
 }
 
 .body{
-    background-color: black;
     color: white;
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    background: conic-gradient(at 0% 30%, rgb(0, 0, 0) 10%, rgb(9, 27, 75) 30%, #000000 50%);
 }
 
 
@@ -13,10 +13,6 @@ html{
     margin-left: 15%;
     margin-right: 15%;
     background-color: white;
-}
-
-footer{
-    background-color: black;
 }
 
 .cards-wrapper{
@@ -64,8 +60,9 @@ footer{
 .firstPage{
     height: 100vh;
     margin-top: 15%;
-    font-style: oblique;
+    font-style: oblique;      
 }
+
 
 #scrollspysecondepage{
     background-color: rgb(17, 17, 17);
