@@ -2,23 +2,20 @@ html{
     scroll-behavior:smooth;
 }
 
-.body{
-    color: rgb(37, 37, 37);
-    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
-    background: conic-gradient(at 0% 30%, rgb(253, 253, 253) 10%, rgb(236, 191, 182) 30%, #ffffff 50%);
+body.dark-theme {
+    background-color: #000000;
+    color: #FFFFFF;
 }
 
-.dark-mode{
-    color: white;
-    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
-    background: conic-gradient(at 0% 30%, rgb(0, 0, 0) 10%, rgb(9, 27, 75) 30%, #000000 50%);
+.dark-theme nav {
+    background-color: #000000;
+    color: #ffffff;
 }
 
-
-.lignefooter{
-    margin-left: 15%;
-    margin-right: 15%;
+nav{
+    background-color: white;
 }
+
 
 .cards-wrapper{
     display: flex;
@@ -52,18 +49,34 @@ html{
     transform: scale(1.05);
 }
 
-.zoomnav{
+.dark-theme .zoom{
+    transition: transform .2s;
+    width: auto;
+    margin: 0 auto;
+    color: #FFFFFF;
+}
+
+.dark-theme .zoom:hover{
+    transform: scale(1.05);
+    color: #FFFFFF;
+}
+
+.zoomNavButtons{
     transition: transform .2s;
     width: auto;
     margin: 0 auto;
 }
 
-.zoomnav:hover{
-    transform: scale(1.13);
+.zoomNavButtons:hover{
+    transform: scale(1.05);
 }
 
 .firstPage{
     height: 100vh;
     margin-top: 15%;
     font-style: oblique;      
+}
+
+.under-navbar{
+    margin-top: 15vh;
 }

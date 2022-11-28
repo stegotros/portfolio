@@ -14,50 +14,49 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js"></script>
     <title>Portfolio Jean Caron</title>
-</head>
+</head>   
 <body class="body">
-
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-black">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
+            <span class="navbar-toggler-icon"></span>
+        </button>
         
-		<div class="collapse navbar-collapse ml-3" id="navbarTogglerDemo02">
-			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-				<li class="nav-item active">
-					<a class="nav-link zoom" href="index.html">Accueil</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link zoom" href="projetCat.html" role="button">Mes projets</a>
-				</li>
+        <div class="collapse navbar-collapse ml-3" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link zoom" href="index.html" role="button">Accueil</a>
+                </li>
                 <li class="nav-item">
-					<a class="nav-link zoom" href="#">Formation</a>
-				</li>		
-				<li class="nav-item">
-					<a class="nav-link zoom" href="#">Compétences</a>
-				</li>		
-				<li class="nav-item">
-					<a class="nav-link zoom" href="contact.html">Contact</a>
-				</li>		
+                    <a class="nav-link zoom" href="projetCat.html" role="button">Mes projets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link zoom" href="#">Formation</a>
+                </li>		
+                <li class="nav-item">
+                    <a class="nav-link zoom" href="#">Compétences</a>
+                </li>		
+                <li class="nav-item">
+                    <a class="nav-link zoom" href="contact.html">Contact</a>
+                </li>		
             </ul>
-
+            <!--darkmode-->
+            <div class="form-check form-switch pr-4" id="theme-toggle">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Dark mode</label>
+            </div>
             <section>
-                <!--darkmode-->
-                <button type="button" class="btn btn-outline-secondary" onclick="darkMode()">Darkmode</button>
                 <!--github-->  
-				<a class="btn btn-outline-light btn-floating m-1 zoom" href="https://github.com/stegotraus/" role="button" target="_blank"><i class="fa fa-github"></i></a>
-				<!--gitlab-->  
-				<a class="btn btn-outline-light btn-floating m-1 zoom" href="https://gitlab.com/stegotraus" role="button" target="_blank"><i class="fa fa-gitlab"></i></a>
-				<!--twitter-->
-				<a class="btn btn-outline-light btn-floating m-1 zoom" href="#!" role="button" target="_blank"><i class="fa fa-linkedin"></i></a>
-
-			</section>
-
-		</div>
-	</nav>
-
-
+                <a class="btn btn-outline-dark btn-floating m-1 zoomNavButtons" href="https://github.com/stegotraus/" role="button" target="_blank"><i class="fa fa-github"></i></a>
+                <!--gitlab-->  
+                <a class="btn btn-outline-dark btn-floating m-1 zoomNavButtons" href="https://gitlab.com/stegotraus" role="button" target="_blank"><i class="fa fa-gitlab"></i></a>
+                <!--twitter-->
+                <a class="btn btn-outline-dark btn-floating m-1 zoomNavButtons" href="#!" role="button" target="_blank"><i class="fa fa-linkedin"></i></a>
     
+            </section>
+    
+        </div>
+    </nav>
+        
     <div class="firstPage">
         <div class="container">
             <p class="fs-1">Jean Caron</p>
@@ -74,7 +73,7 @@
 
     <div data-bs-spy="scroll" class="scrollspy-example">
         <div class="container mb-4 text-justify" id="scrollspysecondepage">
-            <p class="mt-4 fs-3" id="Apropos">À propos</p>
+            <p class="fs-3" id="Apropos">À propos</p>
             <br>
                 <p class="fs-5">
                     Bienvenue à vous sur mon portfolio, je suis actuellement alternant au service informatique du groupe Berry Global, sur le site de Neuville-en-Ferrain et en formation à l'IUT de Lille. J'ai eu et ai pour mission de connaitre globalement le réseau de l'usine, en répertoriant certaines informations de chacun des serveurs présents (physiques ou virtuels) sur tout le site.
@@ -109,10 +108,81 @@
     </div>
     <footer class="text-center pb-0" style="margin-top: 10vh;">
         <hr class="lignefooter">
-		<div class="text-center">
-			© Jean Caron - portfolio
-		</div>
-		<!-- Copyright -->
-	</footer>
+        <div class="text-center">
+            © Jean Caron - portfolio
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <script>
+        var body = document.getElementsByTagName('body')[0];
+        var dark_theme_class = 'dark-theme';
+        var theme = getCookie('theme');
+
+        if(theme != '') {
+            body.classList.add(theme);
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+
+
+            $('#theme-toggle').on('click', function () {
+
+                if (body.classList.contains(dark_theme_class)) {
+
+                    body.classList.remove(dark_theme_class);
+                    setCookie('theme', 'light');
+
+                }
+                else {
+
+                    body.classList.add(dark_theme_class);
+
+                    setCookie('theme', 'dark-theme');
+
+                }
+
+            });
+
+        });
+
+        // enregistrement du theme dans le cookie
+
+        function setCookie(name, value) {
+
+            var d = new Date();
+            d.setTime(d.getTime() + (365*24*60*60*1000));
+            var expires = "expires=" + d.toUTCString();
+            console.log(expires)
+            document.cookie = name + "=" + value + ";" + expires + ";path=/";
+            console.log(document.cookie)
+
+        }
+
+
+
+
+        // methode de recuperation du theme dans le cookie
+
+        function getCookie(cname) {
+
+            var theme = cname + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(';');
+
+            for(var i = 0; i < ca.length; i++) {
+
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+
+                if (c.indexOf(theme) == 0) {
+                    return c.substring(theme.length, c.length);
+                }
+            }
+            return "";
+        }
+    </script>
 </body>
 </html>

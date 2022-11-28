@@ -5,7 +5,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../style.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -15,42 +17,46 @@
 
 <body class="d-flex flex-column min-vh-100 body">
 
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
+            <span class="navbar-toggler-icon"></span>
+        </button>
         
-		<div class="collapse navbar-collapse ml-3" id="navbarTogglerDemo02">
-			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-				<li class="nav-item active">
-					<a class="nav-link zoomnav" href="index.html">Accueil</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link zoomnav" href="projetCat.html" role="button">Mes projets</a>
-				</li>
+        <div class="collapse navbar-collapse ml-3" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link zoom" href="index.html" role="button">Accueil</a>
+                </li>
                 <li class="nav-item">
-					<a class="nav-link zoomnav" href="#">Formation</a>
-				</li>		
-				<li class="nav-item">
-					<a class="nav-link zoomnav" href="#">Compétences</a>
-				</li>		
-				<li class="nav-item">
-					<a class="nav-link zoomnav" href="contact.html">Contact</a>
-				</li>		
+                    <a class="nav-link zoom" href="projetCat.html" role="button">Mes projets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link zoom" href="#">Formation</a>
+                </li>		
+                <li class="nav-item">
+                    <a class="nav-link zoom" href="#">Compétences</a>
+                </li>		
+                <li class="nav-item">
+                    <a class="nav-link zoom" href="contact.html">Contact</a>
+                </li>		
             </ul>
-
+            <!--darkmode-->
+            <div class="form-check form-switch pr-4" id="theme-toggle">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Dark mode</label>
+            </div>
             <section>
-				<!--github-->  
-				<a class="btn btn-outline-dark btn-floating m-1 zoom" href="https://github.com/stegotraus/" role="button" target="_blank"><i class="fa fa-github"></i></a>
-				<!--gitlab-->  
-				<a class="btn btn-outline-dark btn-floating m-1 zoom" href="https://gitlab.com/stegotraus" role="button" target="_blank"><i class="fa fa-gitlab"></i></a>
-				<!--twitter-->
-				<a class="btn btn-outline-dark btn-floating m-1 zoom" href="#!" role="button" target="_blank"><i class="fa fa-linkedin"></i></a>
-
-			</section>
-
-		</div>
-	</nav>
+                <!--github-->  
+                <a class="btn btn-outline-dark btn-floating m-1 zoomNavButtons" href="https://github.com/stegotraus/" role="button" target="_blank"><i class="fa fa-github"></i></a>
+                <!--gitlab-->  
+                <a class="btn btn-outline-dark btn-floating m-1 zoomNavButtons" href="https://gitlab.com/stegotraus" role="button" target="_blank"><i class="fa fa-gitlab"></i></a>
+                <!--twitter-->
+                <a class="btn btn-outline-dark btn-floating m-1 zoomNavButtons" href="#!" role="button" target="_blank"><i class="fa fa-linkedin"></i></a>
+    
+            </section>
+    
+        </div>
+    </nav>
 
 
     <footer class="text-center text-dark pb-0 mt-auto">
@@ -60,5 +66,76 @@
 		</div>
 		<!-- Copyright -->
 	</footer>
+	<script>
+        var body = document.getElementsByTagName('body')[0];
+        var dark_theme_class = 'dark-theme';
+        var theme = getCookie('theme');
+
+        if(theme != '') {
+            body.classList.add(theme);
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+
+
+            $('#theme-toggle').on('click', function () {
+
+                if (body.classList.contains(dark_theme_class)) {
+
+                    body.classList.remove(dark_theme_class);
+                    setCookie('theme', 'light');
+
+                }
+                else {
+
+                    body.classList.add(dark_theme_class);
+
+                    setCookie('theme', 'dark-theme');
+
+                }
+
+            });
+
+        });
+
+        // enregistrement du theme dans le cookie
+
+        function setCookie(name, value) {
+
+            var d = new Date();
+            d.setTime(d.getTime() + (365*24*60*60*1000));
+            var expires = "expires=" + d.toUTCString();
+            console.log(expires)
+            document.cookie = name + "=" + value + ";" + expires + ";path=/";
+            console.log(document.cookie)
+
+        }
+
+
+
+
+        // methode de recuperation du theme dans le cookie
+
+        function getCookie(cname) {
+
+            var theme = cname + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(';');
+
+            for(var i = 0; i < ca.length; i++) {
+
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+
+                if (c.indexOf(theme) == 0) {
+                    return c.substring(theme.length, c.length);
+                }
+            }
+            return "";
+        }
+    </script>
+
 </body>
 </html>

@@ -26,3 +26,9 @@ function darkMode() {
   element.classList.toggle("dark-mode");
 }
   
+
+$.get("navbar.html", function(data){
+  $("#nav-placeholder").replaceWith(data);
+});
+
+
