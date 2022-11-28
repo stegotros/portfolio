@@ -16,6 +16,14 @@ nav{
     background-color: rgb(212, 212, 203);
 }
 
+footer{
+    background-color: rgb(212, 212, 203);
+}
+
+.dark-theme footer{
+background-color: #000000;
+}
+
 .navButtons{
     background-color: #000000;
 }
