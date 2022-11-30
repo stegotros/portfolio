@@ -1,7 +1,7 @@
-$('#recipeCarousel').carousel({
+/*$('#recipeCarousel').carousel({
     interval: 10000
-  });
-  
+});
+
 $('.carousel .carousel-item').each(function(){
     var minPerSlide = 3;
     var next = $(this).next();
@@ -20,6 +20,9 @@ $('.carousel .carousel-item').each(function(){
     }
 });
 
+*/
+
+
 
 function darkMode() {
   var element = document.body;
@@ -35,11 +38,11 @@ if(theme != '') {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    if (getCookie('theme')=='light'){
-        document.getElementById('flexSwitchCheckDefault').checked=false;
+    if (getCookie('theme')==dark_theme_class){
+        document.getElementById('flexSwitchCheckDefault').checked=true;
     }
     else{
-        document.getElementById('flexSwitchCheckDefault').checked=true;
+        document.getElementById('flexSwitchCheckDefault').checked=false;
     }
 
 
