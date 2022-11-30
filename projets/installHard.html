@@ -13,6 +13,8 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Portfolio Jean Caron</title>
+    <style>
+    </style>
 </head>
 
 <body class="d-flex flex-column min-vh-100 body">
@@ -25,10 +27,10 @@
         <div class="collapse navbar-collapse ml-3" id="navbarTogglerDemo02">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                    <a class="nav-link zoom" href="index.html" role="button">Accueil</a>
+                    <a class="nav-link zoom" href="../index.html" role="button">Accueil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link zoom" href="projetCat.html" role="button">Mes projets</a>
+                    <a class="nav-link zoom" href="../projetCat.html" role="button">Mes projets</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link zoom" href="#">Formation</a>
@@ -37,7 +39,7 @@
                     <a class="nav-link zoom" href="#">Compétences</a>
                 </li>		
                 <li class="nav-item">
-                    <a class="nav-link zoom" href="contact.html">Contact</a>
+                    <a class="nav-link zoom" href="../contact.html">Contact</a>
                 </li>		
             </ul>
             <!--darkmode-->
@@ -58,83 +60,70 @@
         </div>
     </nav>
 
+    <h1 class="text-center">Montage de mon premier desktop</h1>
+    <div id="carouselExampleIndicators" class="carousel slide w-50 h-50 position-absolute top-50 end-0 translate-middle-y" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+        </div>
 
-    <footer class="text-center text-dark pb-0 mt-auto">
+        <div class="carousel-inner">
+            <center>
+                <div class="containe">
+                    <div class="carousel-item active">
+                        <img src="../pictures/pc1.webp" class="d-block img-fluid" alt="pc1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../pictures/pc2.webp" class="d-block img-fluid" alt="pc2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../pictures/pc3.webp" class="d-block img-fluid" alt="pc3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../pictures/pc4.webp" class="d-block img-fluid" alt="pc4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../pictures/pc5.webp" class="d-block img-fluid" alt="pc5">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../pictures/pc6.webp" class="d-block img-fluid" alt="pc6">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../pictures/pc7.webp" class="d-block img-fluid" alt="pc7">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../pictures/pc8.webp" class="d-block img-fluid" alt="pc8">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../pictures/pc9.webp" class="d-block img-fluid" alt="pc9">
+                    </div>
+                </div>
+            </center>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <footer class="text-center p-3 mt-auto">
 		<div class="text-center">
 			© Jean Caron - portfolio
 		</div>
 		<!-- Copyright -->
 	</footer>
-	<script>
-        var body = document.getElementsByTagName('body')[0];
-        var dark_theme_class = 'dark-theme';
-        var theme = getCookie('theme');
-
-        if(theme != '') {
-            body.classList.add(theme);
-        }
-
-        document.addEventListener('DOMContentLoaded', function () {
-
-
-            $('#theme-toggle').on('click', function () {
-
-                if (body.classList.contains(dark_theme_class)) {
-
-                    body.classList.remove(dark_theme_class);
-                    setCookie('theme', 'light');
-
-                }
-                else {
-
-                    body.classList.add(dark_theme_class);
-
-                    setCookie('theme', 'dark-theme');
-
-                }
-
-            });
-
-        });
-
-        // enregistrement du theme dans le cookie
-
-        function setCookie(name, value) {
-
-            var d = new Date();
-            d.setTime(d.getTime() + (365*24*60*60*1000));
-            var expires = "expires=" + d.toUTCString();
-            console.log(expires)
-            document.cookie = name + "=" + value + ";" + expires + ";path=/";
-            console.log(document.cookie)
-
-        }
-
-
-
-
-        // methode de recuperation du theme dans le cookie
-
-        function getCookie(cname) {
-
-            var theme = cname + "=";
-            var decodedCookie = decodeURIComponent(document.cookie);
-            var ca = decodedCookie.split(';');
-
-            for(var i = 0; i < ca.length; i++) {
-
-                var c = ca[i];
-                while (c.charAt(0) == ' ') {
-                    c = c.substring(1);
-                }
-
-                if (c.indexOf(theme) == 0) {
-                    return c.substring(theme.length, c.length);
-                }
-            }
-            return "";
-        }
-    </script>
+    <script src="script.js"></script>
 
 </body>
 </html>

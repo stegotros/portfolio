@@ -23,10 +23,10 @@
     <div class="collapse navbar-collapse ml-3" id="navbarTogglerDemo02">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-                <a class="nav-link zoom" href="index.html" role="button">Accueil</a>
+                <a class="nav-link zoom" href="../index.html" role="button">Accueil</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link zoom" href="projetCat.html" role="button">Mes projets</a>
+                <a class="nav-link zoom" href="../projetCat.html" role="button">Mes projets</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link zoom" href="#">Formation</a>
@@ -35,7 +35,7 @@
                 <a class="nav-link zoom" href="#">Compétences</a>
             </li>		
             <li class="nav-item">
-                <a class="nav-link zoom" href="contact.html">Contact</a>
+                <a class="nav-link zoom" href="../contact.html">Contact</a>
             </li>		
         </ul>
         <!--darkmode-->
@@ -57,82 +57,13 @@
 </nav>
 
 
-<footer class="text-center text-dark pb-0 mt-auto">
-		<div class="text-center">
+    <footer class="text-center p-3 mt-auto">
+        <div class="text-center">
 			© Jean Caron - portfolio
 		</div>
 		<!-- Copyright -->
 	</footer>
-	<script>
-        var body = document.getElementsByTagName('body')[0];
-        var dark_theme_class = 'dark-theme';
-        var theme = getCookie('theme');
-
-        if(theme != '') {
-            body.classList.add(theme);
-        }
-
-        document.addEventListener('DOMContentLoaded', function () {
-
-
-            $('#theme-toggle').on('click', function () {
-
-                if (body.classList.contains(dark_theme_class)) {
-
-                    body.classList.remove(dark_theme_class);
-                    setCookie('theme', 'light');
-
-                }
-                else {
-
-                    body.classList.add(dark_theme_class);
-
-                    setCookie('theme', 'dark-theme');
-
-                }
-
-            });
-
-        });
-
-        // enregistrement du theme dans le cookie
-
-        function setCookie(name, value) {
-
-            var d = new Date();
-            d.setTime(d.getTime() + (365*24*60*60*1000));
-            var expires = "expires=" + d.toUTCString();
-            console.log(expires)
-            document.cookie = name + "=" + value + ";" + expires + ";path=/";
-            console.log(document.cookie)
-
-        }
-
-
-
-
-        // methode de recuperation du theme dans le cookie
-
-        function getCookie(cname) {
-
-            var theme = cname + "=";
-            var decodedCookie = decodeURIComponent(document.cookie);
-            var ca = decodedCookie.split(';');
-
-            for(var i = 0; i < ca.length; i++) {
-
-                var c = ca[i];
-                while (c.charAt(0) == ' ') {
-                    c = c.substring(1);
-                }
-
-                if (c.indexOf(theme) == 0) {
-                    return c.substring(theme.length, c.length);
-                }
-            }
-            return "";
-        }
-    </script>
+    <script src="script.js"></script>
 
 </body>
 </html>
