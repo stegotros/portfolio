@@ -1,126 +1,3 @@
-html{
-    scroll-behavior:smooth;
-}
-
-body.dark-theme {
-    background-color: #000000;
-    color: #ffffff;
-}
-
-.dark-theme nav {
-    background-color: #000000;
-}
-
-
-nav{
-    background-color: rgb(212, 212, 203);
-}
-
-footer{
-    background-color: rgb(212, 212, 203);
-}
-
-.dark-theme footer{
-background-color: #000000;
-}
-
-.navButtons{
-    background-color: #000000;
-}
-
-.navbar .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-.dark-theme .navbar .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-.dark-theme .navButtons{
-    color: #FFFFFF;
-}
-
-
-.cards-wrapper{
-    display: flex;
-    justify-content: center;
-}
-
-.card img{
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.card{
-    margin: 0 0.5rem;
-    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-    border: none;
-    border-radius: 0;
-}
-
-.carousel-inner{
-    padding: 1rem;
-}
-
-
-.zoom{
-    transition: transform .2s;
-    width: auto;
-    margin: 0 auto;
-}
-
-.zoom:hover{
-    transform: scale(1.05);
-}
-
-.dark-theme .zoom{
-    transition: transform .2s;
-    width: auto;
-    margin: 0 auto;
-    color: #FFFFFF;
-}
-
-.dark-theme .zoom:hover{
-    transform: scale(1.05);
-    color: #FFFFFF;
-}
-
-.zoomNavButtons{
-    transition: transform .2s;
-    width: auto;
-    margin: 0 auto;
-}
-
-.zoomNavButtons:hover{
-    transform: scale(1.05);
-}
-
-.firstPage{
-    height: 100vh;
-    margin-top: 15%;
-    font-style: oblique;      
-}
-
-.under-navbar{
-    margin-top: 15vh;
-}
-
-.carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-}
-
-.carousel-control-next-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-}
-
-.dark-theme .carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-}
-
-.dark-theme .carousel-control-next-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-}
-
 /*---------------------------FORMATION CSS-------------------------------------*/
 
 /* Media Queries */
@@ -334,65 +211,35 @@ background-color: #000000;
 	width: 100%;
   }
   #timeline .demo-card--step1 {
-	background-color: rgb(212, 212, 203);
+	background-color: #616161;
   }
   #timeline .demo-card--step1 .head::after {
-	border-color: rgb(212, 212, 203);
+	border-color: #616161;
   }
   #timeline .demo-card--step2 {
-	background-color: rgb(212, 212, 203);
+	background-color: #616161;
   }
   #timeline .demo-card--step2 .head::after {
-	border-color: rgb(212, 212, 203);
+	border-color: #616161;
   }
   #timeline .demo-card--step3 {
-	background-color: rgb(212, 212, 203);
+	background-color: #616161;
   }
   #timeline .demo-card--step3 .head::after {
-	border-color: rgb(212, 212, 203);
+	border-color: #616161;
   }
   #timeline .demo-card--step4 {
-	background-color: rgb(212, 212, 203);
+	background-color: #616161;
   }
   #timeline .demo-card--step4 .head::after {
-	border-color: rgb(212, 212, 203);
+	border-color: #616161;
   }
   #timeline .demo-card--step5 {
-	background-color: rgb(212, 212, 203);
+	background-color: #616161;
   }
   #timeline .demo-card--step5 .head::after {
-	border-color: rgb(212, 212, 203);
+	border-color: #616161;
   }
   
-  .dark-theme #timeline .demo-card--step1 {
-	background-color: #616161;
-  }
-  .dark-theme #timeline .demo-card--step1 .head::after {
-	border-color: #616161;
-  }
-  .dark-theme #timeline .demo-card--step2 {
-	background-color: #616161;
-  }
-  .dark-theme #timeline .demo-card--step2 .head::after {
-	border-color: #616161;
-  }
-  .dark-theme #timeline .demo-card--step3 {
-	background-color: #616161;
-  }
-  .dark-theme #timeline .demo-card--step3 .head::after {
-	border-color: #616161;
-  }
-  .dark-theme #timeline .demo-card--step4 {
-	background-color: #616161;
-  }
-  .dark-theme #timeline .demo-card--step4 .head::after {
-	border-color: #616161;
-  }
-  .dark-theme #timeline .demo-card--step5 {
-	background-color: #616161;
-  }
-  .dark-theme #timeline .demo-card--step5 .head::after {
-	border-color: #616161;
-  }
 
   /*---------------------------FORMATION CSS-------------------------------------*/
