@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Formation</title>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100 body">
     <nav class="navbar navbar-expand-lg fixed-top">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -56,79 +56,58 @@
         </div>
     </nav>
 
-
-    <section id=timeline>
-        <h1 class="pb-5">Mon parcours</h1>
-        <div class="demo-card-wrapper">
-            <div class="demo-card demo-card--step1">
-                <div class="head">
-                    <div class="number-box">
-                        <span>01</span>
-                    </div>
-                    <h2><span class="small">université lille</span>IUT de Lille</h2>
-                </div>
-                <div class="body">
-                    <h5>Anée en cours en alternance.</h5>
-                    <img src="../pictures/iutlille.jpg">
-                </div>
+    <div class="container position-absolute top-50 start-50 translate-middle">                      
+        <div class="row text-center justify-content-center mb-5">
+            <div class="col-xl-6 col-lg-8">
+                <h2 class="font-weight-bold">Formation</h2>
             </div>
-    
-            <div class="demo-card demo-card--step2">
-                <div class="head">
-                    <div class="number-box">
-                        <span>02</span>
-                    </div>
-                    <h2><span class="small">université artois, 07/22</span> IUT de Lens</h2>
-                </div>
-                <div class="body">
-                    <h5>Obtention de ma première année de BUT informatique. 09/21 - 07/22</h5>
-                    <img src="../pictures/iutlens.jpg">
-                </div>
-            </div>
-    
-            <div class="demo-card demo-card--step3">
-                <div class="head">
-                    <div class="number-box">
-                        <span>03</span>
-                    </div>
-                    <h2><span class="small">université artois, 02/21</span> IUT de Lens</h2>
-                </div>
-                <div class="body">
-                    <h5>Intégration du DU Tremplin. 02/21 - 07/21</h5>
-                    <img src="../pictures/iutlens.jpg">
-                </div>
-            </div>
-    
-            <div class="demo-card demo-card--step4">
-                <div class="head">
-                    <div class="number-box">
-                        <span>04</span>
-                    </div>
-                    <h2><span class="small">université lille, 09/20 - 12/20</span> Licence sesi</h2>
-                </div>
-                <div class="body">
-                    <h5>Premier semestre de licence SESI.</h5>
-                    <img src="../pictures/citescientifique.jpg">
-                </div>
-            </div>
-    
-            <div class="demo-card demo-card--step5">
-                <div class="head">
-                    <div class="number-box">
-                        <span>05</span>
-                    </div>
-                    <h2><span class="small">LYCEE - Saint-Pol-sur-Ternoise</span>Albert Châtelet</h2>
-                </div>
-                <div class="body">
-                    <h5>Baccalauréat scientifique mention assez bien.</h5>
-                    <img src="../pictures/lycee.jpg" alt="Graphic">
-                </div>
-            </div>
-        
         </div>
-    </section>
+    
+        <div class="row">
+            <div class="col">
+                <div class="timeline-steps aos-init aos-animate" data-aos="fade-up">
+                    <div class="timeline-step">
+                        <div class="timeline-content zoom" data-toggle="popover" data-trigger="hover" data-placement="top" data-original-title="2019/2020">
+                            <div class="inner-circle"></div>
+                            <p class="h6 mt-3 mb-1">2019/2020</p>
+                            <p class="h6 text-muted mb-0 mb-lg-0">Baccalauréat scientifique <br> mention assez bien</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="timeline-content zoom" data-toggle="popover" data-trigger="hover" data-placement="top" data-original-title="sept 2020 - dec 2020">
+                            <div class="inner-circle" href=""></div>
+                            <p class="h6 mt-3 mb-1">sept 2020 - dec 2020</p>
+                            <p class="h6 text-muted mb-0 mb-lg-0">S1 Licence SESI <br> Université Lille</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="timeline-content zoom" data-toggle="popover" data-trigger="hover" data-placement="top" data-original-title="fev 2021 - juin 2021">
+                            <div class="inner-circle"></div>
+                            <p class="h6 mt-3 mb-1">fev 2021 - juin 2021</p>
+                            <p class="h6 text-muted mb-0 mb-lg-0">DU Tremplin <br> Université Artois</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="timeline-content zoom" data-toggle="popover" data-trigger="hover" data-placement="top" data-original-title="2021/2022">
+                            <div class="inner-circle"></div>
+                            <p class="h6 mt-3 mb-1">2021/2022</p>
+                            <p class="h6 text-muted mb-0 mb-lg-0">BUT 1 informatique <br> IUT de Lens</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step mb-0">
+                        <div class="timeline-content zoom" data-toggle="popover" data-trigger="hover" data-placement="top" data-original-title="2022/2023">
+                            <div class="inner-circle"></div>
+                            <p class="h6 mt-3 mb-1">2022/2023</p>
+                            <p class="h6 text-muted mb-0 mb-lg-0">BUT 1 informatique <br> IUT de Lille</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <footer class="text-center p-3">
+
+    <footer class="text-center p-3 mt-auto">
         <div class="text-center">
             © Jean Caron - portfolio
         </div>
