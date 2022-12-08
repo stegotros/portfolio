@@ -129,7 +129,7 @@ background-color: #000000;
 .timeline-steps {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap
+    flex-wrap: wrap-reverse;
 }
 
 .timeline-steps .timeline-step {
@@ -139,6 +139,7 @@ background-color: #000000;
     position: relative;
     margin: 1rem
 }
+
 
 @media (min-width:768px) {
     .timeline-steps .timeline-step:not(:last-child):after {
@@ -150,6 +151,7 @@ background-color: #000000;
         left: 7.5rem;
         top: .3125rem
     }
+    
     .timeline-steps .timeline-step:not(:first-child):before {
         content: "";
         display: block;
