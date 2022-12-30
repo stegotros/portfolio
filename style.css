@@ -192,4 +192,44 @@ background-color: #000000;
     border-radius: 6.25rem;
     opacity: .5
 }
+
+.hide1 {
+    display: none;
+}
+
+.cercle1:hover + .hide1 {
+    display: block;
+}
+
+.hide2 {
+    display: none;
+}
+
+.cercle2:hover + .hide2 {
+    display: block;
+}
+
+.hide3 {
+    display: none;
+}
+
+.cercle3:hover + .hide3 {
+    display: block;
+}
+
+.hide4 {
+    display: none;
+}
+
+.cercle4:hover + .hide4 {
+    display: block;
+}
+
+.hide5 {
+    display: none;
+}
+
+.cercle5:hover + .hide5 {
+    display: block;
+}
   /*---------------------------FORMATION CSS-------------------------------------*/
