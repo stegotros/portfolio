@@ -1,5 +1,5 @@
 <?php
-/*
+
     $name = $_POST['name'];
     $firstName = $_POST['firstName'];
     $visitor_email = $_POST['email'];
