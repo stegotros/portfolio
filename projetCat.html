@@ -65,74 +65,92 @@
     <section class="pt-5 pb-5 under-navbar">
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-12">
                     <h1 class="mb-3">Projets par catégorie</h1>
                 </div>
-                <div class="col-6 text-right">
-                    <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
-                        <i class="fa fa-arrow-left"></i>
-                    </a>
-                    <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
-                        <i class="fa fa-arrow-right"></i>
-                    </a>
+                <div class="card-deck m-4">
+                    <div class="card zoom bg-dark">
+                        <img src="./pictures/hardware.jpg" class="card-img-top custom-card-img" alt="...">
+                        <div class="card-body">
+                            <h5>Installation hardware</h5>
+                            
+                            <p>Mes experiences en termes d'installation physique et maintenance.</p>
+                            <a href="./projets/installHard.html" class="btn btn-primary" >voir</a>
+                        </div>
+                    </div>
+
+                    <div class="card zoom bg-dark">
+                        <img src="./pictures/web.jpg" class="card-img-top custom-card-img" alt="...">
+                        <div class="card-body">
+                            <h5>Web</h5>
+                            <p>Ici vous trouverez mes projets web personnels ou scolaires.</p>
+                            <a href="./projets/web.html" class="btn btn-primary" >voir</a>
+                        </div>
+                        
+                    </div>
+                    <div class="card zoom bg-dark">
+                        <img src="./pictures/tuxvswin.jpg" class="card-img-top custom-card-img" alt="...">
+                        <div class="card-body">
+                            <h5>Systèmes d'exploitations</h5>
+                            <p>Vous trouverez ici mes connaissances dans différents systemes d'exploitations.</p>
+                            <a href="./projets/system.html" class="btn btn-primary" >voir</a>
+                        </div>
+                        
+                    </div>
                 </div>
-                <div class="col-12">
-                    <div id="carouselExampleIndicators2" class="carousel slide" id="recipeCarousel" data-ride="carousel" data-bs-ride="false" data-interval=10000>
-                        <div class="carousel-inner text-dark">
-                            <div class="carousel-item active">
-                                <div class="row">
-    
-                                    <div class="col-md-6 mb-3">
-                                        <a href="./projets/installHard.html">
-                                            <div class="card border border-dark zoom text-dark">
-                                                <img class="img-fluid" alt="100%x280" src="./pictures/hardware.jpg">
-                                                <div class="card-body">
-                                                    <h4 class="card-title">Installation hardware</h4>
-                                                    <p class="card-text">Cliquez sur cette carte pour pour voir mes experiences en termes d'installation physique et maintenance</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-6 mb-3">
-                                        <a href="./projets/web.html">
-                                            <div class="card border border-dark zoom text-dark">
-                                                <img class="img-fluid" alt="100%x280" src="./pictures/web.jpg">
-                                                <div class="card-body">
-                                                    <h4 class="card-title">Web</h4>
-                                                    <p class="card-text">Ici vous trouverez mes projets web personnels ou scolaires <br><br></p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-    
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row">    
-                                    <div class="col-md-6 mb-3">
-                                        <a href="./projets/system.html">
-                                            <div class="card border border-dark zoom text-dark">
-                                                <img class="img-fluid" alt="100%x280" src="./pictures/tuxvswin.jpg" height="120">
-                                                <div class="card-body">
-                                                    <h4 class="card-title">Systeme d'exploitation</h4>
-                                                    <p class="card-text">Vous trouverez ici mes connaissances dans différents systemes d'exploitations</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-6 mb-3">
-                                        <a href="./projets/vm.html">
-                                            <div class="card border border-dark zoom text-dark">
-                                                <img class="img-fluid" alt="100%x280" src="./pictures/vm.png">
-                                                <div class="card-body">
-                                                    <h4 class="card-title">Virtualisation</h4>
-                                                    <p class="card-text">Cliquez ici pour constater mes compétences avec différentes solutions de Virtualisation</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="card-deck m-4">
+                    <div class="card zoom bg-dark">
+                        <img src="./pictures/vm.png" class="card-img-top custom-card-img" alt="...">
+                        <div class="card-body">
+                            <h5>Virtualisation</h5>
+                            <p>Cliquez ici pour constater mes compétences avec différentes solutions de Virtualisation</p>
+                            <a href="./projets/vm.html" class="btn btn-primary">voir</a>
+                        </div>
+                        
+                    </div>
+                    <div class="card zoom bg-dark">
+                        <img src="pictures/zabbix.png" class="card-img-top custom-card-img" alt="...">
+                        <div class="card-body">
+                            <h5>Zabbix</h5>
+                            <p>Déploiement d'un serveur zabbix</p>
+                            <a href="https://www.zabbix.com/" class="btn btn-primary" target="_blank">voir</a>
+                        </div>
+                        
+                    </div>
+                    <div class="card zoom bg-dark">
+                        <img src="pictures/dokuwiki.jpg" class="card-img-top custom-card-img" alt="...">
+                        <div class="card-body">
+                            <h5>Dokuwiki</h5>
+                            <p>Déploiement d'un serveur dokuwiki</p>
+                            <a href="https://www.dokuwiki.org/dokuwiki" class="btn btn-primary" target="_blank">voir</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-deck m-4">
+                    <div class="card zoom bg-dark">
+                        <img src="./pictures/nextcloud.jpg" class="card-img-top custom-card-img" alt="...">
+                        <div class="card-body">
+                            <h5>Nextcloud</h5>
+                            <p>Mise en place de mon service cloud avec nextcloud.</p>
+                            <a href="https://nextcloud.stegoos.com" class="btn btn-primary" target="_blank">voir</a>
+                        </div>
+                        
+                    </div>
+                    <div class="card zoom bg-dark">
+                        <img src="pictures/jellyfin.png" class="card-img-top custom-card-img" alt="...">
+                        <div class="card-body">
+                            <h5>Jellyfin</h5>
+                            <p>Déploiement de jellyfin pour avoir mon serveur de streaming.</p>
+                            <a href="https://jellyfin.stegoos.com" class="btn btn-primary" target="_blank">voir</a>
+                        </div>
+                        
+                    </div>
+                    <div class="card zoom bg-dark">
+                        <img src="pictures/odoo.jpg" class="card-img-top custom-card-img" alt="...">
+                        <div class="card-body">
+                            <h5>Odoo</h5>
+                            <p>Déploiement d'odoo avec ansible et terraform sur azure en projet de cloud computing.</p>
+                            <a href="https://www.odoo.com/fr_FR" class="btn btn-primary" target="_blank">voir</a>
                         </div>
                     </div>
                 </div>

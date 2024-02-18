@@ -60,51 +60,79 @@
     
     <div class="firstPage">
         <div class="container">
-            <p class="fs-1">Jean Caron</p>
-            <br>
-            <p class="fs-2">Alternant - Technicien systèmes et réseaux</p>
-            <div class="d-flex flex-row justify-content-center align-items-center">
-                <a class="btn btn-primary mb-3 bg-dark border border-dark boutonApropos" href="#scrollspysecondepage" role="button" data-slide="next" id="boutonText">
-                    <i class="fa fa-arrow-circle-down"></i>
-                </a>
+            <div class="row justify-content-around">
+                <div class="col-md-6">
+                    <p class="fs-1">Jean Caron</p>
+                    <br>
+                    <p class="fs-2">Alternant - Administrateur systèmes et réseaux</p>
+                </div>
+                <div class="col-md-5">
+                    <div class="d-flex justify-content-end align-items-center mb-3"> <!-- Utilisation de 'justify-content-end' pour aligner à droite -->
+                        <img src="pictures/idd modifié.png" class="w-50 rounded-4 zoom" alt="..."> <!-- Utilisation de 'w-25' pour définir la largeur de l'image -->
+                    </div>
+                </div>
+                <div class="d-flex flex-row justify-content-center align-items-center mt-3"> <!-- Div pour le bouton -->
+                    <a class="btn btn-primary bg-dark border border-dark boutonApropos" href="#scrollspysecondepage" role="button" data-slide="next" id="boutonText">
+                        <i class="fa fa-arrow-circle-down"></i>
+                    </a>
+                </div>
             </div>
         </div>        
     </div>
+    
+
+
+    
     
 
     <div data-bs-spy="scroll" class="scrollspy-example">
         <div class="container mb-4 text-justify" id="scrollspysecondepage">
             <p class="fs-3" id="Apropos">À propos</p>
             <br>
-                <p class="fs-5">
-                    Bienvenue à vous sur mon portfolio, je suis actuellement alternant au service informatique du groupe Berry Global, sur le site de Neuville-en-Ferrain et en formation à l'IUT de Lille. J'ai eu et ai pour mission de connaitre globalement le réseau de l'usine, en répertoriant certaines informations (ex: adresse IP, MAC, stockage...) de chacun des serveurs présents (physiques ou virtuels) sur tout le site.
+                <p>
+                    <!--
+                        * qui je suis, ce que je fais ;
+                        * que m'a appris l'IUT ;
+                        * apport pour les projet pro et perso ;
+                        * qu'ai-je fais personnellement ;
+                        * qu'ai-je fais professionnellement ;
+                        * conclusion en invitant à continuer la navigation. 
+                    -->
+                    Bienvenue sur mon portfolio. Je suis Jean Caron, étudiant à l'IUT A de Villeneuve d'Ascq, en alternance au service informatique de l'usine Dounor
+                    en tant qu'administrateur système et réseau. J'ai eu la chance de pouvoir valider mes deux dernières années de BUT à ce post, ce qui m'a permis 
+                    de me construire une première expérience professionnelle solide, ainsi que de mettre à bien notamment deux projets m'ayant permis de m'améliorer 
+                    techniquement.
                     <br>
-                    J'ai pour projet de devenir administrateur systèmes et réseaux.
-                    <br>
-                    L'IUT m'a aidé à apprendre la programmation, en python et Java. La conception de base de données en langage sql et avec l'outil postgresql et également les bases de l'administration réseaux via des SAE où nous avons dû créer, avec l'ensemble de la promo, un réseau communiquant et fonctionnel (IUT de Lens). J'ai personnellement et professionnellement eu des expériences avec quelques domaines de l'informatique:
-                    <br>
-                    <ul class="fs-5">
-                        <li>Personnellement:</li>
-                            <ul>
-                                <li>de la maintenance (pc/téléphone) ;</li>
-                                <li>du web ;</li>
-                                <li>de l'utilisation et installation de plusieurs systemes ;</li>
-                                <li>installation de serveur NAS (sur truenas scale) ;</li>
-                                <li>Utilisation de Docker.</li>
-                            </ul>
-                        <br>
-                        <li>Professionnellement, dans le cadre d'un stage:</li>
-                            <ul>
-                                <li>de la gestion d'utilisateur ;</li>
-                                <li>montage de plusieurs serveur (NAS ou tour) ;</li>
-                                <li>odits chez des clients ;</li>
-                            </ul>
+                    L'IUT m'a d'abord transmis des connaissances générales dans le domaine informatique, en développement procédural, objet, en bases de données et aussi en systèmes 
+                    et réseaux.
+                    J'ai souhaité suivre le parcours <i>déploiement d'applications communicantes et sécurisées</i> pour me spécialiser dans le domaine des systèmes et réseaux.
+                    Grâce aux connaissances acquises en cours, j'ai pu me former et proposer des solutions d'amélioration pour le service informatique dans lequel je travaille. Voici un rapide
+                    aperçu de ce que j'ai pu mettre en place à Dounor :
+                    <ul>
+                        <li>La documentation informatique complète du site ;</li>
+                        <li>Un serveur wiki (dokuwiki) pour la documentation et les procédures ;</li>
+                        <li>Un superviseur (zabbix).</li>
+                    </ul>
+                    J'ai aussi fait beaucoup de support, d'assistance des ingénieurs, de maintenance sur ordinateurs, et de maintenance du réseau. Grâce à d'autres expériences significatives
+                    mais plus courtes, notamment des stages, j'ai aussi pu travailler les compétences suivantes d'un administrateur :
+                    <ul>
+                        <li>De la gestion d'utilisateur ;</li>
+                        <li>Montage de plusieurs serveurs (NAS ou tour) ;</li>
+                        <li>Audits chez des clients.</li>
                     </ul>
                     <br>
-                    <p class="fs-5">
-                        Lorsqu'un client ou un membre de ma famille me demande de résoudre un probleme sur son poste, je suis capable de trouver une solution rapidement en cherchant d'où peu venir le problème étape par étape.
-                        Grâce aux projets organisés à l'IUT, je sais travailler en équipe et écouter mes collègues.
-                    </p>
+                    <br>
+                    L'informatique n'est pas seulement mon domaine de travail, c'est aussi une passion. J'ai débuté avec de la maintenance sur ordinateur (changer un disque, de la ram, une batterie),
+                    puis j'ai monté mon ordinateur de A à Z, et enfin, j'ai mis en place un serveur personnel qui propose différents services. Ceux-ci me servent à me faciliter la vie, mieux sécuriser mes 
+                    données, être en adéquation avec mes principes moraux, ou tout simplement à m'amuser, voici quelques exemples ci-dessous :
+                    <ul>
+                        <li>Mon service de cloud (nextcloud) ;</li>
+                        <li>Mon service de streaming (jellyfin) ;</li>
+                        <li>Mon service de bureautique (onlyoffice).</li>
+                    </ul>
+                    
+                        Vous trouverez des précisions sur chacun des projets cités ainsi que les informations importantes de mon parcours scolaire sur ce portfolio. Bonne navigation à vous !
+                    
                 </p>
         </div>
     </div>
